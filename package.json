@@ -1,6 +1,6 @@
 {
   "name": "algostructum.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interesting algorithms & data structures on JavaScript.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "keywords": ["Algorithms", "Data Structures"],
   "author": "Slavus54",
-  "license": "STU",
+  "license": "NSTU",
   "dependencies": {
     "node": "^18.20.0"
   }

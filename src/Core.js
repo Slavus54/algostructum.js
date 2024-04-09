@@ -105,7 +105,92 @@ class Core {
 
         return result
     }
+
+    rainTerraces(arr = []) {
+        let amount = 0
+
+        for (let i = 0; i < arr.length; i++) {
+            let left = 0
+
+            for (let leftIdx = i - 1; leftIdx >= 0; leftIdx--) {
+                left = Math.max(left, arr[leftIdx])
+            }
+
+            let right = 0
+
+            for (let rightIdx = i + 1; rightIdx < arr.length; rightIdx++) {
+                right = Math.max(right, arr[rightIdx])
+            }
+
+            let boundary = Math.min(left, right)
+
+            if (boundary > arr[i]) {
+                amount += Math.abs(boundary - arr[i])
+            }
+        }
+    
+        return amount
+    }
         
+    isProgression(arr = []) {
+        let flag = true
+        let repeat = false
+        let schemas = []
+
+        let i = 1
+        let j = 0
+
+        while (i < arr.length && flag) {
+            let prev = arr[i - 1]
+            let current = arr[i]
+
+            let diff = Math.abs(prev - current)
+            let schema 
+                    
+            if (repeat) {
+                schema = schemas[j]
+            } else {
+                schema = `${prev > current ? '-' : '+'}${diff}` 
+
+                let idx = schemas.indexOf(schema)
+    
+                if (idx === -1) {
+                    schemas = [...schemas, schema]
+                } else if (idx === 0) {
+                    j = idx
+                    repeat = true
+                }
+            } 
+   
+            flag = eval(prev + schema) === current
+            i++
+
+            if (repeat) {
+                j = j === schemas.length - 1 ? 0 : j + 1
+            }
+        }
+
+        return {flag, schemas}
+    }
+
+    binarySearch(arr = [], element = null) {
+        let start = 0
+        let end = arr.length - 1 
+
+        while (start <= end) {
+            let middle = Math.floor((start + end) / 2)
+
+            if (arr[middle] === element) {
+                return middle
+            } else if (arr[middle] < element) {
+                start = middle + 1
+            } else {
+                end = middle - 1
+            }
+        }
+
+        return -1
+    }
 }
 
 module.exports = Core

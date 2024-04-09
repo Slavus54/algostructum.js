@@ -7,8 +7,8 @@ Interesting algorithms & data structures on JavaScript.
 Some of them are my ideas in code. Other have been imported from great repository of Oleksii Trekhleb - 	
 https://github.com/trekhleb/javascript-algorithms
 
-Current Version  - 1.0.0
-License - STU (Slovak University of Technology in Bratislava)
+Current Version  - 1.0.1
+License - NSTU (Novosibirsk State Technical University)
 
 Author: Slavus54 (Russia)
 https://github.com/Slavus54
@@ -20,14 +20,20 @@ https://github.com/Slavus54
 
 ### Methods
 
-*bit* (**num** = 42) - convert an integer to binary number.   	
+-*bit* (**num** = 42) - convert an integer to binary number.   	
 
-*euclidean* (**a** = 1, **b** = 2) - find GCD of numbers.         	
+-*euclidean* (**a** = 1, **b** = 2) - find GCD of numbers.         	
 
-*jump* (**arr** = []) - own realization of greedy Jump Algorithm with other way to calculate distance;    
+-*jump* (**arr** = []) - own realization of greedy Jump Algorithm with other way to calculate distance;    
 returns an object {jumps, max, flag}.      	
 
-*accuracy* (**body** = '', **arr** = [], **marker** = 'x') - gain function with array of arguments and give away        	
+-*accuracy* (**body** = '', **arr** = [], **marker** = 'x') - gain function with array of arguments and give away        	
 maximum of accuracy finded as product of (y / x) and y variable's fraction.  		
 
-*fib* (**num** = 0) - returns list of Fibonacci numbers.        	
+-*fib* (**num** = 0) - returns list of Fibonacci numbers.        	
+
+-*rainTerraces* (**arr** = []) - gains an list of non-negative ints representing terraces in an elevation map where the width of each bar is 1, and counts how much water it is able to trap after raining.         
+
+-*isProgression* (**arr** = []) - checks if array of integers is progression and find math formulas (there are elements according them).        
+
+-*binarySearch* (**arr** = [], **element** = null) - finds element of list and returns it in Divide and Conquer paradigm.   
