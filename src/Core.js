@@ -191,6 +191,57 @@ class Core {
 
         return -1
     }
+
+    indexSymmetry(arr = []) {
+        let result = 0
+        let value = 0
+
+        for (let i = 1; i < arr.length - 1; i++) {
+            let prev = arr[i - 1]
+            let current = i === 1 ? arr[i] : value
+            let next = arr[i + 1]
+
+            value = current - prev + next
+        }
+
+        result = Math.abs(arr[arr.length - 1] - value)
+
+        return result
+    }
+
+    middleLength(text = '', accuracy = 60) {
+        const full_length = text.length
+
+        let result = 0
+        let sum = 0
+        let counter = 0
+        let length = Math.floor(accuracy * full_length * 1e-2)
+      
+        for (let i = 0; i < length; i++) {
+            let current = text[i]
+        
+            if (current === ' ') {
+                counter++
+            } else {
+                sum++
+            }
+        }
+
+        result = Math.floor(sum / counter)
+
+        return result
+    }
+
+    pascalTriangle(lines = 0) {
+        let result = [1]
+        let max = lines + 1
+    
+        for (let i = 1; i < max; i++) {
+            result[i] = (result[i - 1] * (lines - i + 1)) / i
+        }
+
+        return result
+    }
 }
 
 module.exports = Core
