@@ -242,6 +242,55 @@ class Core {
 
         return result
     }
-}
+
+    levenshteinDistance(first = '', second = '') {
+        let matrix = new Array(second.length + 1).fill(null).map(() => new Array(first.length + 1).fill(null))
+
+        for (let i = 0; i <= first.length; i++) {
+            matrix[0][i] = i
+        }
+
+        for (let i = 0; i <= second.length; i++) {
+            matrix[i][0] = i
+        }
+
+        for (let j = 1; j <= second.length; j++) {
+            for (let i = 1; i <= first.length; i++) {
+                const indicator = Number(first[i - 1] !== second[j - 1])
+
+                matrix[j][i] = Math.min(
+                    matrix[j][i - 1] + 1,
+                    matrix[j - 1][i] + 1,
+                    matrix[j - 1][i - 1] + indicator
+                )
+            }
+        }
+
+        return matrix[second.length][first.length]
+    }
+
+    addDivisors(num = 1) {
+        let result = []
+        let middle = Math.floor(num / 2)
+        let step = num % 5 === 0 ? 5 : 1
+        let i = 0
+
+        if (num < 1) {
+            return num
+        }
+
+        while (i <= middle) {
+            let value = num % i
+
+            if (value === 0) {
+                result = [...result, i]
+            }
+
+            i += step
+        }
+
+        return result
+    }
+}   
 
 module.exports = Core
