@@ -7,7 +7,7 @@ Interesting algorithms & data structures on JavaScript.
 Some of them (~ 40%) are my ideas in code. Other have been imported from great repository of Oleksii Trekhleb - 	
 https://github.com/trekhleb/javascript-algorithms
 
-Current Version - 1.0.2        
+Current Version - 1.0.3      
 License - NSTU (Novosibirsk State Technical University)  
 
 Author: Slavus54 (Russia)   
@@ -24,8 +24,8 @@ https://github.com/Slavus54
 
 -*euclidean* (**a** = 1, **b** = 2) - find GCD of numbers.         	
 
--*jump* (**arr** = []) - own realization of greedy Jump Algorithm with other way to calculate distance; Time complexity - *O(n)*          
-returns an object {jumps, max, flag}.      	
+-*jump* (**arr** = []) - own realization of greedy Jump Algorithm with other way to calculate distance;             
+returns an object {jumps, max, flag}. Time complexity - *O(n)*        	
 
 -*accuracy* (**body** = '', **arr** = [], **marker** = 'x') - gain function with array of arguments and give away        	
 maximum of accuracy finded as product of (y / x) and y variable's fraction. Time complexity - *O(n)*          		
@@ -46,4 +46,8 @@ maximum of accuracy finded as product of (y / x) and y variable's fraction. Time
 
 -*levenshteinDistance* (**first** = '', **second** = '') - compares strings and returns number of minimum symbol operations to make them equal.   
 
--*addDivisors* (**num** = 1) - find all divisors of positive integer value and returns list of them. Time complexity - *O(n)*             
+-*addDivisors* (**num** = 1) - find all divisors of positive integer value and returns list of them. Time complexity - *O(n)*         
+
+-*rhombus* (**num** = 5) - builds rhombus array of numbers lists, which node is sequence of degree's number multiplied on element's position. Time complexity - *O(n)*     
+
+-*qsort* (**arr** = []) - best way to sort array of numbers created by Tony Hoare.      

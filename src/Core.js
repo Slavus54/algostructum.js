@@ -291,6 +291,37 @@ class Core {
 
         return result
     }
+
+    rhombus(num = 5) {
+        const length = num * 2 - 1
+        let nodes = new Array(length).fill(null)
+
+        for (let i = 0; i < num; i++) {
+            const index = i + 1
+
+            let node = new Array(index).fill(null).map((_, idx) => index**(idx + 1))
+            
+            if (index !== num) {
+                nodes[length - index] = node
+            }
+
+            nodes[i] = node
+        }
+
+        return nodes
+    }
+
+    qsort(arr = []) {
+        if (arr.length > 1) {
+            let pivot = arr[Math.floor(Math.random() * arr.length)]
+            let less = arr.filter(el => el < pivot)
+            let greater = arr.filter(el => el > pivot)
+
+            return [...this.qsort(less), pivot, ...this.qsort(greater)]
+        }
+
+        return arr
+    }
 }   
 
 module.exports = Core
