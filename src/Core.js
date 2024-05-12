@@ -322,6 +322,27 @@ class Core {
 
         return arr
     }
+
+    recursiveStaircase(num = 1) {
+        if (num < 0) {
+            return 0
+        } else if (num < 3) {
+            return num
+        }
+
+        return this.recursiveStaircase(num - 1) + this.recursiveStaircase(num - 2)
+    }
+
+    growth(num = 1, multiplier = 1) {
+        if (multiplier === 1) {
+            return num
+        }
+
+        num *= multiplier
+        multiplier--
+
+        return this.growth(num, multiplier)
+    }
 }   
 
 module.exports = Core

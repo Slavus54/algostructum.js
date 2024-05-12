@@ -7,7 +7,7 @@ Interesting algorithms & data structures on JavaScript.
 Some of them (~ 40%) are my ideas in code. Other have been imported from great repository of Oleksii Trekhleb - 	
 https://github.com/trekhleb/javascript-algorithms
 
-Current Version - 1.0.3      
+Current Version - **1.0.4**     
 License - NSTU (Novosibirsk State Technical University)  
 
 Author: Slavus54 (Russia)   
@@ -50,4 +50,8 @@ maximum of accuracy finded as product of (y / x) and y variable's fraction. Time
 
 -*rhombus* (**num** = 5) - builds rhombus array of numbers lists, which node is sequence of degree's number multiplied on element's position. Time complexity - *O(n)*     
 
--*qsort* (**arr** = []) - best way to sort array of numbers created by Tony Hoare.      
+-*qsort* (**arr** = []) - best way to sort array of numbers created by Tony Hoare.  
+
+-*recursiveStaircase* (**num** = 1) - counts ways to reach the top by one or two steps.    
+
+-*growth* (**num** = 1, **multiplier** = 1) - returns result of number's multiplication on factorial of *multiplier*.         
