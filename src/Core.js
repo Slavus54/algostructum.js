@@ -343,7 +343,6 @@ class Core {
 
         return this.growth(num, multiplier)
     }
-<<<<<<< HEAD
     
     insertionSort(arr = []) {
         for (let i = 1; i < arr.length; i++) {
@@ -360,8 +359,6 @@ class Core {
 
         return arr
     }
-=======
->>>>>>> 46589aa5828a485a3a97e09252b39af896d54056
 }   
 
 module.exports = Core

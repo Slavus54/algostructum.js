@@ -58,10 +58,6 @@ maximum of accuracy finded as product of (y / x) and y variable's fraction. Time
 
 -*recursiveStaircase* (**num** = 1) - counts ways to reach the top by one or two steps.    
 
-<<<<<<< HEAD
 -*growth* (**num** = 1, **multiplier** = 1) - returns result of number's multiplication on factorial of *multiplier*.            
 
 -*insertionSort* (**arr** = []) - returns sorted array of numbers, my favorite sorting algorithm.                       
-=======
--*growth* (**num** = 1, **multiplier** = 1) - returns result of number's multiplication on factorial of *multiplier*.         
->>>>>>> 46589aa5828a485a3a97e09252b39af896d54056

@@ -1,10 +1,6 @@
 {
   "name": "algostructum.js",
-<<<<<<< HEAD
   "version": "1.0.5",
-=======
-  "version": "1.0.4",
->>>>>>> 46589aa5828a485a3a97e09252b39af896d54056
   "description": "Interesting algorithms & data structures on JavaScript.",
   "main": "index.js",
   "scripts": {
