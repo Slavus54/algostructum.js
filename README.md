@@ -7,7 +7,11 @@ Interesting algorithms & data structures on JavaScript.
 Some of them (~ 40%) are my ideas in code. Other have been imported from great repository of Oleksii Trekhleb - 	
 https://github.com/trekhleb/javascript-algorithms
 
+<<<<<<< HEAD
 Current Version - **1.0.5**     
+=======
+Current Version - **1.0.4**     
+>>>>>>> 46589aa5828a485a3a97e09252b39af896d54056
 License - NSTU (Novosibirsk State Technical University)  
 
 Author: Slavus54 (Russia)   
@@ -54,6 +58,10 @@ maximum of accuracy finded as product of (y / x) and y variable's fraction. Time
 
 -*recursiveStaircase* (**num** = 1) - counts ways to reach the top by one or two steps.    
 
+<<<<<<< HEAD
 -*growth* (**num** = 1, **multiplier** = 1) - returns result of number's multiplication on factorial of *multiplier*.            
 
 -*insertionSort* (**arr** = []) - returns sorted array of numbers, my favorite sorting algorithm.                       
+=======
+-*growth* (**num** = 1, **multiplier** = 1) - returns result of number's multiplication on factorial of *multiplier*.         
+>>>>>>> 46589aa5828a485a3a97e09252b39af896d54056
