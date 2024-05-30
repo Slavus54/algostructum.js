@@ -7,8 +7,13 @@ Interesting algorithms & data structures on JavaScript.
 Some of them (~ 40%) are my ideas in code. Other have been imported from great repository of Oleksii Trekhleb - 	
 https://github.com/trekhleb/javascript-algorithms
 
+<<<<<<< HEAD
 Current Version - **1.0.6**     
 License - NSTU (Novosibirsk State Technical University)    
+=======
+Current Version - **1.0.5**           
+License - NSTU (Novosibirsk State Technical University)  
+>>>>>>> a80f06d496c3eff529218531f681e55390bc3f67
 
 You can try it on npm - *https://www.npmjs.com/package/algostructum.js*   
 
