@@ -359,6 +359,31 @@ class Core {
 
         return arr
     }
+    
+    boxFilling(arr = []) {
+        let steps = Math.floor(arr.length / 3)
+        let amount = 0
+
+        for (let i = 1; i <= steps; i++) {
+            let index = i * 3 - 1
+            let prevIdx = (i - 1) * 3 - 1
+            let height = Math.min(arr[index], arr[index - 2])
+            let base = arr[index - 1]
+            let square = base**2 * height
+
+            if (prevIdx > 0) {
+                let isPrevTall = arr[index - 2] === height && arr[prevIdx] > height
+                
+                if (isPrevTall) {
+                    square = base**2 * Math.min(arr[index], arr[prevIdx])
+                }                                
+            } 
+            
+            amount += square            
+        }
+
+        return amount
+    }
 }   
 
 module.exports = Core

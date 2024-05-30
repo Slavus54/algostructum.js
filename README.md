@@ -7,14 +7,12 @@ Interesting algorithms & data structures on JavaScript.
 Some of them (~ 40%) are my ideas in code. Other have been imported from great repository of Oleksii Trekhleb - 	
 https://github.com/trekhleb/javascript-algorithms
 
-<<<<<<< HEAD
-Current Version - **1.0.5**     
-=======
-Current Version - **1.0.4**     
->>>>>>> 46589aa5828a485a3a97e09252b39af896d54056
-License - NSTU (Novosibirsk State Technical University)  
+Current Version - **1.0.6**     
+License - NSTU (Novosibirsk State Technical University)    
 
-Author: Slavus54 (Russia)   
+You can try it on npm - *https://www.npmjs.com/package/algostructum.js*   
+
+Author: Slavus54 (Russia)      
 https://github.com/Slavus54
 
 ### Get Started
@@ -60,4 +58,6 @@ maximum of accuracy finded as product of (y / x) and y variable's fraction. Time
 
 -*growth* (**num** = 1, **multiplier** = 1) - returns result of number's multiplication on factorial of *multiplier*.            
 
--*insertionSort* (**arr** = []) - returns sorted array of numbers, my favorite sorting algorithm.                       
+-*insertionSort* (**arr** = []) - returns sorted array of numbers, my favorite sorting algorithm.      
+
+-*boxFilling* (**arr** = []) - returns volume of filled square boxes with characteristics by each 3 array's numbers: 1 - height of left side, 2 - bottom, 3 - height of right side. Time complexity - *O(n)*    
